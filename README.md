@@ -1,4 +1,4 @@
 # Expense Tracker
-A dynamic web-based quiz application that allows users to test their knowledge through multiple-choice questions. The app features real-time score tracking, interactive UI, and instant feedback after each question. Built using HTML, CSS, and JavaScript, it's designed to be responsive and engaging across all devices.
+A responsive web application that helps users manage and monitor their daily expenses. Users can add, view, and delete transactions. The app features a summary of income vs expenses and a pie chart visualization to track spending by category. Built using HTML, CSS, and JavaScript for a smooth and intuitive experience.
 ## Live Link:
 https://priyanka-chaudhari26.github.io/expense-tracker/
