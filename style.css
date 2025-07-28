@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f2f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.forms-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.forms-container button {
+  width: 30%;
+  margin: 1rem 11rem;
+  text-align: center;
+  align-self: center;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: darkslateblue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #4e9cee;
+  color: white;
+}
+
+.category-label {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.income-label {
+  background: #28a745;
+}
+
+.expense-label {
+  background: #dc3545;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.filter-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.filter-group select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.table-container h2{
+    text-align: center;
+}
+.summary-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.income-card {
+  border-top: 5px solid #28a745;
+}
+
+.expense-card {
+  border-top: 5px solid #dc3545;
+}
+
+.balance-card {
+  border-top: 5px solid #007bff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .summary-cards {
+    flex-direction: column;
+  }
+  .forms-container {
+    flex-direction: column;
+  }
+  .summary-cards {
+    flex-direction: column;
+  }
+  .forms-container button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+td[colspan="6"] {
+  background: #f8f9fa;
+  font-style: italic;
+}
+.chart-container {
+  margin-top: 10px;
+  max-width: 400px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.chart-container h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #444;
+}
+#expenseChart {
+  width: 100% !important;  
+  height: auto !important;
+}
