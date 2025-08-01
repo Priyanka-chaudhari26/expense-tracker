@@ -47,6 +47,8 @@ function deleteTransaction(index) {
   transactions.splice(index, 1);
   localStorage.setItem('transactions', JSON.stringify(transactions));
   renderTable();
+  updateSummary();  
+  updateExpenseChart();
 }
 
 function updateSummary() {
