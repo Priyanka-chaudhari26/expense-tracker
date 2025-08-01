@@ -1,6 +1,8 @@
 let expenseChart; 
 
 let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+transactions = transactions.filter(t => t.date && t.description && t.category && !isNaN(t.amount) && t.type);
+
 
 const incomeBtn = document.getElementById('addIncomeBtn');
 const expenseBtn = document.getElementById('addExpenseBtn');
@@ -134,7 +136,7 @@ function renderTable() {
       <td>${tran.description}</td>
       <td><span class="category-label ${tran.type === 'income' ? 'income-label' : 'expense-label'}">${tran.category}</span></td>
       <td>₹${tran.amount}</td>
-      <td>${tran.type.charAt(0).toUpperCase() + tran.type.slice(1)}</td>
+      <td>${tran.type ? tran.type.charAt(0).toUpperCase() + tran.type.slice(1) : 'Unknown'}</td>
       <td><button class="delete-btn" onclick="deleteTransaction(${index})">X</button></td>
     `;
     tableBody.appendChild(tr);
